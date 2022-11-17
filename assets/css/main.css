@@ -1,0 +1,22 @@
+body {
+  margin : 0;
+  @apply bg-[#001434]
+}
+
+* {
+  color : white;
+  font-family: "Roboto", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* BG - #001434 */
+/*Light bg #0D2441*/
+/*Blue #4D67F0*/
+/*Input bg #3C4655*/
+/*Color #FFFFFF*/

@@ -30,7 +30,10 @@
         <div>{{ user.username }}</div>
         <div>{{ user.status }}</div>
         <div class="account-settings">
-          <img src="../static/gears.svg"/>
+          <div class="settings-container">
+            <img src="../static/gears.svg"/>
+            <img src="../static/recycle.svg"/>
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +132,14 @@ export default {
 }
 
 .account-settings img {
-  @apply h-[25px] w-[25px] cursor-pointer;
+  transform : translateY(2px);
+  @apply h-[25px] w-[25px] cursor-pointer mx-2;
 }
+
+.settings-container {
+  transform : translateY(-7px);
+  @apply px-2 py-1 rounded-md w-fit mx-auto bg-[#3C4655];
+}
+
 
 </style>

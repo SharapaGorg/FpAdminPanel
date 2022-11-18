@@ -19,7 +19,7 @@
     <div class="info-blocks">
       <div class="add-info-container">
         <div>
-          <div class="info-block" style="margin-bottom : 1rem" @click="copyToClipBoard(user.username)">
+          <div class="info-block" style="margin-bottom : 1rem" @click="copyToClipBoard('@' + user.username)">
             @{{ user.username }} <img src="../../static/copy.svg" class="buffer"/>
           </div>
           <div class="info-block" @click="copyToClipBoard(user.id)">

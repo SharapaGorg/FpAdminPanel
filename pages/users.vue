@@ -79,7 +79,7 @@ export default {
 <style scoped>
 
 .users-headers {
-  @apply py-6 grid grid-cols-2 justify-items-end w-2/3 mx-auto;
+  @apply py-6 grid grid-cols-2 justify-items-end md:w-2/3 mx-auto;
 }
 
 .users-count {

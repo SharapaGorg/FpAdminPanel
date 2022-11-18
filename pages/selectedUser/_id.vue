@@ -19,10 +19,10 @@
     <div class="info-blocks">
       <div class="add-info-container">
         <div>
-          <div class="info-block" style="margin-bottom : 1rem">
+          <div class="info-block" style="margin-bottom : 1rem" @click="copyToClipBoard(user.username)">
             @{{ user.username }} <img src="../../static/copy.svg" class="buffer"/>
           </div>
-          <div class="info-block">
+          <div class="info-block" @click="copyToClipBoard(user.id)">
             {{ user.id }}<img src="../../static/copy.svg" class="buffer"/>
           </div>
         </div>
@@ -84,6 +84,9 @@ export default {
     saveBalance() {
       console.log(`New balance : ${this.newBalance}`)
       this.editingBalance = false
+    },
+    copyToClipBoard(text) {
+      navigator.clipboard.writeText(text)
     }
   }
 }

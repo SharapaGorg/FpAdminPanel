@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{286:function(n,t,e){"use strict";e.r(t);var c={name:"payments",layout:"admin"},o=e(27),component=Object(o.a)(c,(function(){return(0,this._self._c)("div",[this._v("Payments page")])}),[],!1,null,"5a070c34",null);t.default=component.exports}}]);
